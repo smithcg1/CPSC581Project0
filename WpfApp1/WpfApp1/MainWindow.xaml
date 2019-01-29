@@ -6,25 +6,37 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-	<Grid Margin="184,54,173.333,64.667">
-		<Button  x:Name="btn1" Click="btn1_Click">
+    <Grid Margin="184,54,173.333,64.667">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button  x:Name="btn1" Click="btn1_Click">
 
-			<Image Height="206" Source="trump.png" Stretch="Fill" Width="183" RenderTransformOrigin="0.5,0.5">
-				<Image.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="16.395"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Image.RenderTransform>
-			</Image>
-		</Button>
-		<TextBlock Name="tbSettingText" HorizontalAlignment="Left" Margin="465,88,-167,0" TextWrapping="Wrap" Text="A day in the lie" VerticalAlignment="Top" Width="138"/>
-		<Label x:Name="lblSeconds" Content="Label" HorizontalAlignment="Left" Margin="481,31,-145,0" VerticalAlignment="Top" Width="100"/>
+            <Image Height="206" Source="trump.png" Stretch="Fill" Width="183" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="16.395"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <TextBlock Name="tbSettingText" HorizontalAlignment="Left" Margin="465,88,-167,0" TextWrapping="Wrap" Text="A day in the lie" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="lblSeconds" Content="Label" HorizontalAlignment="Left" Margin="481,31,-145,0" VerticalAlignment="Top" Width="100"/>
+        <Image Name="brick1" Margin="-175,131,388,-52" Source="brick.jpg" Stretch="Fill" Visibility="Collapsed"/>
+        <Image  Name="brick3" Margin="-91,237,304,-158" Source="brick.jpg" Stretch="Fill" Visibility="Collapsed"/>
+
+        <Image  Name="brick4" Margin="0,237,213,-158" Source="brick.jpg" Stretch="Fill"  Visibility="Collapsed"/>
+        <Image Name="brick5" Margin="-91,131,304,-52" Source="brick.jpg" Stretch="Fill" Visibility="Collapsed"/>
 
 
 
 
-	</Grid>
+    </Grid>
+
+
+
+
 </Window>
