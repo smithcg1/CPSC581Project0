@@ -106,5 +106,48 @@
   <ItemGroup>
     <Resource Include="Wall2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bedroom1.jpg" />
+    <Resource Include="brick.jpg" />
+    <Resource Include="Estate1.jpg" />
+    <Resource Include="Estate3.jpg" />
+    <Resource Include="Golf1.jpg" />
+    <Resource Include="Golf2.jpg" />
+    <Resource Include="Hair1.png" />
+    <Resource Include="Hair2.png" />
+    <Resource Include="Hair3.png" />
+    <Resource Include="Hair4.png" />
+    <Resource Include="Hair5.png" />
+    <Resource Include="Hair6.png" />
+    <Resource Include="Hotel1.jpg" />
+    <Resource Include="Hotel2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon1.jpg" />
+    <Resource Include="Icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon4.png" />
+    <Resource Include="Icon5.png" />
+    <Resource Include="miss_universe1.jpg" />
+    <Resource Include="Newsroom1.jpg" />
+    <Resource Include="Newsroom2.jpg" />
+    <Resource Include="Newsroom3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pence1.png" />
+    <Resource Include="Pence2.png" />
+    <Resource Include="Plane.jpg" />
+    <Resource Include="Podium1.png" />
+    <Resource Include="sun.gif" />
+    <Resource Include="sungif.gif" />
+    <Resource Include="trump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="trump_gb2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

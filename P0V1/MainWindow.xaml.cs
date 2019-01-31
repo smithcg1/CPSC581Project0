@@ -21,41 +21,51 @@ namespace P0V1
     /// </summary>
     public partial class MainWindow : Window
     {
-        int stageCounter = 0;
-        int backgroundCounter = 0;
+        int sbTrumpHairCounter = 0;
+        int backgroundCounter = 1;
+        String[] sbTrumpHair;
+        String[] backgroundList;
+
 
         public MainWindow()
         {
             InitializeComponent();
+            sbTrumpHair = new string[]{"sbTrumpHair1", "sbTrumpHair2", "sbTrumpHair3", "sbTrumpHair4" };
+
+            backgroundList = new string[] { "golf1.jpg", "Hotel3.jpg", "Wall2.jpg"};
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            String storyboardRef = "";
-            if (stageCounter == 0){storyboardRef = "Storyboard1";}
-            else if (stageCounter == 1) { storyboardRef = "Storyboard2";}
-            else if (stageCounter == 2) { storyboardRef = "Storyboard3"; }
-            else if (stageCounter == 3) { storyboardRef = "Storyboard4"; }
-
-            Storyboard sb = this.FindResource(storyboardRef) as Storyboard;
-            sb.Begin();
-
-            stageCounter++;
-            if (stageCounter == 4)
+            if (sbTrumpHairCounter < sbTrumpHair.Length)
             {
-                stageCounter = 0;
+                Storyboard sb = this.FindResource(sbTrumpHair[sbTrumpHairCounter]) as Storyboard;
+                sb.Begin();
+            }
+           
+            sbTrumpHairCounter++;
 
-                String imageFileName = "";
-                if(backgroundCounter == 0){ imageFileName = "golf_course.jpg"; }
-                else if (backgroundCounter == 1) { imageFileName = "Hotel3.jpg"; }
-                else if (backgroundCounter == 2) { imageFileName = "Wall2.jpg"; }
-                else if (backgroundCounter == 3) { imageFileName = "Hotel3.jpg"; }
+            if (sbTrumpHairCounter > sbTrumpHair.Length)
+            {
+                sbTrumpHairCounter = 0;
 
-                Background1.Source = new BitmapImage(new Uri(imageFileName, UriKind.Relative));
+                Background1.Source = new BitmapImage(new Uri(backgroundList[backgroundCounter], UriKind.Relative));
+                if (backgroundCounter >= 0)
+                {
+                    Golfball.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    Golfball.Visibility = Visibility.Visible;
+                }
 
                 backgroundCounter++;
-                if(backgroundCounter > 3) { backgroundCounter = 0; }
+                if (backgroundCounter >= backgroundList.Length)
+                {
+                    backgroundCounter = 0;
+                }
             }
+
         }
     }
 }

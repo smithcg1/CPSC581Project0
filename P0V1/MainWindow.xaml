@@ -7,53 +7,88 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
-        <Storyboard x:Key="Storyboard1">
+        <Storyboard x:Key="sbTrumpHair1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-200"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="155"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="Storyboard2">
+        <Storyboard x:Key="sbTrumpHair2">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
-                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="140"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="12.888"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="Storyboard3">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
-                <EasingDoubleKeyFrame KeyTime="0" Value="140"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="155"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="310"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="Storyboard4">
+        <Storyboard x:Key="sbTrumpHair3">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
-                <EasingDoubleKeyFrame KeyTime="0" Value="210"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="500"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="310"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="465"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sbTrumpHair4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
+                <EasingDoubleKeyFrame KeyTime="0" Value="465"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="620"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.357"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sbGolfball1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Golfball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="359.563"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Golfball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="84.72"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Golfball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-9.23"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Golfball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.17"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Golfball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.17"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseRightButtonDown" SourceName="Button1">
+            <BeginStoryboard x:Name="sbGolfball1_BeginStoryboard" Storyboard="{StaticResource sbGolfball1}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid>
-        <Image x:Name="Background1" HorizontalAlignment="Left" Height="319" Margin="0.07,0,0,0" VerticalAlignment="Top" Width="516.93" Source="golf_course.jpg"/>
+        <Image x:Name="Background1" HorizontalAlignment="Left" Height="347" Margin="0,-28,-77,0" VerticalAlignment="Top" Width="594" Source="golf1.jpg"/>
 
         <Button x:Name="Button1" Content="Button" HorizontalAlignment="Left" Height="33.914" Margin="81.465,38.795,0,0" VerticalAlignment="Top" Width="40.019" Click="Button1_Click"/>
-        <Image x:Name="Hair" HorizontalAlignment="Left" Height="78.509" Margin="33.984,201.758,0,0" VerticalAlignment="Top" Width="95.64" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="Golfball" HorizontalAlignment="Left" Height="16" Margin="50,205,0,0" VerticalAlignment="Top" Width="16" Source="trump_gb2.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Hair" HorizontalAlignment="Left" Height="79" Margin="-100.93,196.609,0,0" VerticalAlignment="Top" Width="96" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
