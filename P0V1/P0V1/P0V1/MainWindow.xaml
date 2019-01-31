@@ -50,7 +50,7 @@
         </Storyboard>
     </Window.Resources>
     <Grid>
-        <Image x:Name="Background" HorizontalAlignment="Left" Height="319" Margin="0.07,0,0,0" VerticalAlignment="Top" Width="516.93" Source="golf_course.jpg"/>
+        <Image x:Name="Background" HorizontalAlignment="Left" Height="319" Margin="0.07,0,0,0" VerticalAlignment="Top" Width="516.93" Source="Bedroom1.jpg"/>
 
         <Button x:Name="Button1" Content="Button" HorizontalAlignment="Left" Height="33.914" Margin="81.465,38.795,0,0" VerticalAlignment="Top" Width="40.019" Click="Button1_Click"/>
         <Image x:Name="Hair" HorizontalAlignment="Left" Height="78.509" Margin="33.984,201.758,0,0" VerticalAlignment="Top" Width="95.64" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">

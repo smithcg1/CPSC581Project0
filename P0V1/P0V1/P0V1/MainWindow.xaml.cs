@@ -22,6 +22,8 @@ namespace P0V1
     public partial class MainWindow : Window
     {
         int stage = 0;
+        string[] images = { "Bedroom1.jpg", "Estate1.jpg", "Golf2.jpg", "Hotel1.jpg", "Newsroom1.jpg", "Plane.jpg", "Podium1.png" };
+        string ourImage = "Bedroom1.jpg";
 
         public MainWindow()
         {
@@ -30,6 +32,8 @@ namespace P0V1
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
+
+            Background.Source = new BitmapImage(new Uri(@"C:\Users\user\Documents\GitHub\CPSC581Project0\P0V1\P0V1\P0V1\" + ourImage));
             if (stage == 0)
             {
                 Storyboard sb = this.FindResource("Storyboard1") as Storyboard;
@@ -53,13 +57,24 @@ namespace P0V1
                 Storyboard sb = this.FindResource("Storyboard4") as Storyboard;
                 //Storyboard.SetTarget(sb, this.Button1);
                 sb.Begin();
-                
+
             }
 
             stage++;
-            if (stage == 4)
+            if (stage == 4 ) 
             {
                 stage = 0;
+                if (ourImage != "Podium1.png")
+                {
+                    ourImage = images[Array.IndexOf(images, ourImage) + 1];
+
+                }
+                else
+                {
+                    ourImage = images[0];
+                    Console.WriteLine(ourImage);
+
+                }
             }
         }
     }
