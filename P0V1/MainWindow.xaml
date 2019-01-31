@@ -10,7 +10,7 @@
         <Storyboard x:Key="Storyboard1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-200"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-10"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -19,19 +19,18 @@
         </Storyboard>
         <Storyboard x:Key="Storyboard2">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
-                <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="140"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="130"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="12.888"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="Storyboard3">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
-                <EasingDoubleKeyFrame KeyTime="0" Value="140"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="278"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -40,8 +39,8 @@
         </Storyboard>
         <Storyboard x:Key="Storyboard4">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
-                <EasingDoubleKeyFrame KeyTime="0" Value="210"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="500"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="278"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="420"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -53,7 +52,7 @@
         <Image x:Name="Background1" HorizontalAlignment="Left" Height="319" Margin="0.07,0,0,0" VerticalAlignment="Top" Width="516.93" Source="golf_course.jpg"/>
 
         <Button x:Name="Button1" Content="Button" HorizontalAlignment="Left" Height="33.914" Margin="81.465,38.795,0,0" VerticalAlignment="Top" Width="40.019" Click="Button1_Click"/>
-        <Image x:Name="Hair" HorizontalAlignment="Left" Height="78.509" Margin="33.984,201.758,0,0" VerticalAlignment="Top" Width="95.64" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="Hair" HorizontalAlignment="Left" Height="79" Margin="-100.93,206,0,0" VerticalAlignment="Top" Width="96" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
