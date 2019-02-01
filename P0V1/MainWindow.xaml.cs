@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Diagnostics;
 
 namespace P0V1
 {
@@ -25,6 +26,7 @@ namespace P0V1
         int backgroundCounter = 1;
         String[] sbTrumpHair;
         String[] backgroundList;
+        int brickcounter = 0;
 
 
         public MainWindow()
@@ -33,6 +35,61 @@ namespace P0V1
             sbTrumpHair = new string[]{"sbTrumpHair1", "sbTrumpHair2", "sbTrumpHair3", "sbTrumpHair4" };
 
             backgroundList = new string[] { "golf1.jpg", "Hotel3.jpg", "Wall2.jpg"};
+        }
+
+        private void irs_botton_clicked(object sender, RoutedEventArgs e)
+        {
+            Storyboard sb1 = this.FindResource("sbclosedsign") as Storyboard;
+            sb1.Begin();
+            Debug.WriteLine("IRS VISIBLE");
+
+        }
+
+
+        private void constructionButton_clicked(object sender, RoutedEventArgs e)
+        {
+            if(brickcounter == 1) {
+                brick1.Visibility = Visibility.Visible;
+            }
+            if (brickcounter == 2)
+            {
+                brick2.Visibility = Visibility.Visible;
+            }
+            if (brickcounter == 3)
+            {
+                brick3.Visibility = Visibility.Visible;
+            }
+            if (brickcounter == 4)
+            {
+                brick4.Visibility = Visibility.Visible;
+            }
+            if (brickcounter == 5)
+            {
+                brick5.Visibility = Visibility.Visible;
+            }
+            if (brickcounter == 6)
+            {
+                brick5.Visibility = Visibility.Collapsed;
+            }
+            if (brickcounter == 7)
+            {
+                brick4.Visibility = Visibility.Collapsed;
+            }
+            if (brickcounter == 8)
+            {
+                brick3.Visibility = Visibility.Collapsed;
+            }
+            if (brickcounter == 9)
+            {
+                brick2.Visibility = Visibility.Collapsed;
+            }
+            if (brickcounter == 10)
+            {
+                brick1.Visibility = Visibility.Collapsed;
+                brickcounter = 0;
+            }
+            brickcounter++;
+
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
@@ -49,14 +106,46 @@ namespace P0V1
             {
                 sbTrumpHairCounter = 0;
 
+                Debug.WriteLine(backgroundCounter);
                 Background1.Source = new BitmapImage(new Uri(backgroundList[backgroundCounter], UriKind.Relative));
                 if (backgroundCounter >= 0)
                 {
                     Golfball.Visibility = Visibility.Collapsed;
+                    speachbubble1.Visibility = Visibility.Collapsed;
+
+
                 }
+                if (backgroundCounter == 1)
+                {
+                    Debug.WriteLine("IRS SIGN SHOULD BE VISIBLE");
+
+                    irs.Visibility = Visibility.Visible;
+                    speachbubble3.Visibility = Visibility.Visible;
+
+                }
+
+                if (backgroundCounter == 2)
+                {
+                    closedsign.Visibility = Visibility.Visible;
+                    constructionButton.Visibility = Visibility.Visible;
+                    irs.Visibility = Visibility.Collapsed;
+                    closedsign.Visibility = Visibility.Collapsed;
+                    speachbubble1.Visibility = Visibility.Visible;
+
+                }
+
+
                 else
                 {
+                    //these two can stay visible
                     Golfball.Visibility = Visibility.Visible;
+                    speachbubble1.Visibility = Visibility.Visible;
+                    constructionButton.Visibility = Visibility.Collapsed;
+  
+
+
+
+
                 }
 
                 backgroundCounter++;

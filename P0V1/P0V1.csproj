@@ -149,5 +149,26 @@
   <ItemGroup>
     <Resource Include="trump_gb2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="trumpface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="textbubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imageedit_8_4765495151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="closedsign.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IRS_SEAL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="underConstruction.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imageedit_15_2872461732.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

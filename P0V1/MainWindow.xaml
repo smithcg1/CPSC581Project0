@@ -68,16 +68,34 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.17"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard  x:Key="sbclosedsign" x:Name="sbclosedsign" >
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="closedsign">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="500"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="closedsign">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="UIElement.MouseRightButtonDown" SourceName="Button1">
             <BeginStoryboard x:Name="sbGolfball1_BeginStoryboard" Storyboard="{StaticResource sbGolfball1}"/>
+
         </EventTrigger>
     </Window.Triggers>
     <Grid>
-        <Image x:Name="Background1" HorizontalAlignment="Left" Height="347" Margin="0,-28,-77,0" VerticalAlignment="Top" Width="594" Source="golf1.jpg"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="95*"/>
+            <ColumnDefinition Width="78*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="Background1" HorizontalAlignment="Left" Height="347" Margin="0,-28,-75.333,0" VerticalAlignment="Top" Width="594" Source="golf1.jpg" Grid.ColumnSpan="2"/>
 
-        <Button x:Name="Button1" Content="Button" HorizontalAlignment="Left" Height="33.914" Margin="81.465,38.795,0,0" VerticalAlignment="Top" Width="40.019" Click="Button1_Click"/>
+
+
+
         <Image x:Name="Golfball" HorizontalAlignment="Left" Height="16" Margin="50,205,0,0" VerticalAlignment="Top" Width="16" Source="trump_gb2.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -88,7 +106,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="Hair" HorizontalAlignment="Left" Height="79" Margin="-100.93,196.609,0,0" VerticalAlignment="Top" Width="96" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="Hair" HorizontalAlignment="Left" Height="79" Margin="-101,197,0,0" VerticalAlignment="Top" Width="96" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -98,6 +116,77 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Button x:Name="Button1" Background="Transparent" Click="Button1_Click" Margin="51.333,63,-63.333,164.667" Grid.Column="1" >
+            <Image Source="trumpface.png" Stretch="Fill" Height="73" Width="81" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.815"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
 
+
+
+        <Button Visibility="Collapsed" Click="irs_botton_clicked" Background="Transparent" x:Name="irs" Margin="71,63,36.667,136.667">
+            <Image Source="IRS_SEAL.jpg" Stretch="Fill" Height="116" Width="153"/>
+
+        </Button>
+
+        <Button Visibility="Collapsed" Click="constructionButton_clicked" Background="Transparent" x:Name="constructionButton" Margin="71,63,36.667,136.667">
+            <Image Source="imageedit_15_2872461732.png" Stretch="Fill" Height="116" Width="153"/>
+
+        </Button>
+        <Image  x:Name="speachbubble3" Visibility="Collapsed" Margin="5.333,20,90.667,180.667" Source="text_bubble3.png" Stretch="Fill" RenderTransformOrigin="0.403,0.88" Grid.Column="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-10.75"/>
+                    <TranslateTransform X="17.786" Y="3.48"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image  x:Name="speachbubble1" Visibility="Collapsed" Margin="5.333,20,90.667,180.667" Source="textbubble.png" Stretch="Fill" RenderTransformOrigin="0.403,0.88" Grid.Column="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-10.75"/>
+                    <TranslateTransform X="17.786" Y="3.48"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        
+        
+        <Image x:Name="speachbubble2" Visibility="Collapsed" Margin="272,4,93.667,189.667" Source="text_bubble2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-11.393"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="closedsign" Margin="-424,-11,357.667,89.667"  Source="closedsign.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="17.543"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="brick1" Visibility="Collapsed" Margin="-5,197,146.667,-0.333" Source="brick.jpg" Stretch="Fill"/>
+        <Image x:Name="brick2" Visibility="Collapsed" Margin="88,197,64.667,-0.333" Source="brick.jpg" Stretch="Fill"/>
+        <Image x:Name="brick3" Visibility="Collapsed" Margin="188,197,206.667,1.667" Source="brick.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Image x:Name="brick4" Visibility="Collapsed"  Grid.Column="1" Margin="1.333,197,88.667,1.667" Source="brick.jpg" Stretch="Fill"/>
+        <Image x:Name="brick5" Visibility="Collapsed" Margin="99.333,197,-0.333,1.667" Source="brick.jpg" Stretch="Fill" Grid.Column="1"/>
     </Grid>
 </Window>
