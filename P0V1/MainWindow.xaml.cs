@@ -34,7 +34,7 @@ namespace P0V1
             InitializeComponent();
             sbTrumpHair = new string[]{"sbTrumpHair1", "sbTrumpHair2", "sbTrumpHair3", "sbTrumpHair4" };
 
-            backgroundList = new string[] { "golf1.jpg", "Hotel3.jpg", "Wall2.jpg", "Podium1.png", "Estate1.jpg", "Estate3.jpg", "miss_universe1.jpg"};
+            backgroundList = new string[] {"Bedroom1.jpg", "Golf1.jpg", "Hotel3.jpg", "Desert1.jpg", "Podium1.png", "Estate1.jpg", "Estate3.jpg", "miss_universe1.jpg"};
         }
 
         private void irs_botton_clicked(object sender, RoutedEventArgs e)
@@ -119,7 +119,7 @@ namespace P0V1
                 {
                     Debug.WriteLine("IRS SIGN SHOULD BE VISIBLE");
 
-                    irs.Visibility = Visibility.Visible;
+                    Golfball.Visibility = Visibility.Visible;
                     speachbubble3.Visibility = Visibility.Visible;
 
                 }
@@ -128,17 +128,22 @@ namespace P0V1
                 {
                     closedsign.Visibility = Visibility.Visible;
                     constructionButton.Visibility = Visibility.Visible;
-                    irs.Visibility = Visibility.Collapsed;
+                    
                     closedsign.Visibility = Visibility.Collapsed;
                     speachbubble1.Visibility = Visibility.Visible;
 
                 }
 
+                if(backgroundCounter == 4)
+                {
+                    IRS.Visibility = Visibility.Visible;
+                    twitter.Visibility = Visibility.Visible;
+                }
 
                 else
                 {
                     //these two can stay visible
-                    Golfball.Visibility = Visibility.Visible;
+                   
                     speachbubble1.Visibility = Visibility.Visible;
                     constructionButton.Visibility = Visibility.Collapsed;
   

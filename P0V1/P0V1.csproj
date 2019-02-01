@@ -162,13 +162,19 @@
     <Resource Include="closedsign.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="IRS_SEAL.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="underConstruction.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imageedit_15_2872461732.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Desert1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IRS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="twitterbird.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

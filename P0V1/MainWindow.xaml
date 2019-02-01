@@ -78,12 +78,42 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbtwitter">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="twitter">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-3.579"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="90.38"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="226.397"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="340.937"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="518.117"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="twitter">
+                <EasingDoubleKeyFrame KeyTime="0" Value="21.923"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="46.979"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="55.927"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="28.187"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-47.875"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="twitter">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.019"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="twitter">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.984"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="twitter">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="17.185"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="17.185"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="8.276"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
 
     </Window.Resources>
     <Window.Triggers>
-        <EventTrigger RoutedEvent="UIElement.MouseRightButtonDown" SourceName="Button1">
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="twitter">
+            <BeginStoryboard x:Name="sbtwitter_BeginStoryboard" Storyboard="{StaticResource sbtwitter}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseRightButtonUp" SourceName="Button1">
             <BeginStoryboard x:Name="sbGolfball1_BeginStoryboard" Storyboard="{StaticResource sbGolfball1}"/>
-
         </EventTrigger>
     </Window.Triggers>
     <Grid>
@@ -91,12 +121,12 @@
             <ColumnDefinition Width="95*"/>
             <ColumnDefinition Width="78*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="Background1" HorizontalAlignment="Left" Height="347" Margin="0,-28,-75.333,0" VerticalAlignment="Top" Width="594" Source="golf1.jpg" Grid.ColumnSpan="2"/>
+        <Image x:Name="Background1" HorizontalAlignment="Left" Height="347" Margin="0,-28,-75.333,0" VerticalAlignment="Top" Width="594"  Grid.ColumnSpan="2" Source="Bedroom1.jpg"/>
 
 
 
 
-        <Image x:Name="Golfball" HorizontalAlignment="Left" Height="16" Margin="50,205,0,0" VerticalAlignment="Top" Width="16" Source="trump_gb2.png" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="Golfball" HorizontalAlignment="Left" Height="16" Margin="50,205,0,0" VerticalAlignment="Top" Width="16" Source="trump_gb2.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -131,10 +161,6 @@
 
 
 
-        <Button Visibility="Collapsed" Click="irs_botton_clicked" Background="Transparent" x:Name="irs" Margin="71,63,36.667,136.667">
-            <Image Source="IRS_SEAL.jpg" Stretch="Fill" Height="116" Width="153"/>
-
-        </Button>
 
         <Button Visibility="Collapsed" Click="constructionButton_clicked" Background="Transparent" x:Name="constructionButton" Margin="71,63,36.667,136.667">
             <Image Source="imageedit_15_2872461732.png" Stretch="Fill" Height="116" Width="153"/>
@@ -161,8 +187,8 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        
-        
+
+
         <Image x:Name="speachbubble2" Visibility="Collapsed" Margin="272,4,93.667,189.667" Source="text_bubble2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" >
             <Image.RenderTransform>
                 <TransformGroup>
@@ -188,5 +214,16 @@
         <Image x:Name="brick3" Visibility="Collapsed" Margin="188,197,206.667,1.667" Source="brick.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
         <Image x:Name="brick4" Visibility="Collapsed"  Grid.Column="1" Margin="1.333,197,88.667,1.667" Source="brick.jpg" Stretch="Fill"/>
         <Image x:Name="brick5" Visibility="Collapsed" Margin="99.333,197,-0.333,1.667" Source="brick.jpg" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="IRS" HorizontalAlignment="Left" Height="167" Margin="113,50,0,0" VerticalAlignment="Top" Width="95" Source="IRS.png" Visibility="Collapsed"/>
+        <Image x:Name="twitter" HorizontalAlignment="Left" Height="56" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Source="twitterbird.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>
