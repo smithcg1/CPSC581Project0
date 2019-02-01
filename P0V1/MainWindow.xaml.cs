@@ -34,7 +34,7 @@ namespace P0V1
             InitializeComponent();
             sbTrumpHair = new string[]{"sbTrumpHair1", "sbTrumpHair2", "sbTrumpHair3", "sbTrumpHair4" };
 
-            backgroundList = new string[] { "golf1.jpg", "Hotel3.jpg", "Wall2.jpg"};
+            backgroundList = new string[] { "golf1.jpg", "Hotel3.jpg", "Wall2.jpg", "Podium1.png", "Estate1.jpg", "Estate3.jpg", "miss_universe1.jpg"};
         }
 
         private void irs_botton_clicked(object sender, RoutedEventArgs e)
