@@ -42,55 +42,6 @@ namespace P0V1
             Storyboard sb1 = this.FindResource("sbclosedsign") as Storyboard;
             sb1.Begin();
             Debug.WriteLine("IRS VISIBLE");
-
-        }
-
-        
-        private void constructionButton_clicked(object sender, RoutedEventArgs e)
-        {
-            /*
-            if(brickcounter == 1) {
-                brick1.Visibility = Visibility.Visible;
-            }
-            if (brickcounter == 2)
-            {
-                brick2.Visibility = Visibility.Visible;
-            }
-            if (brickcounter == 3)
-            {
-                brick3.Visibility = Visibility.Visible;
-            }
-            if (brickcounter == 4)
-            {
-                brick4.Visibility = Visibility.Visible;
-            }
-            if (brickcounter == 5)
-            {
-                brick5.Visibility = Visibility.Visible;
-            }
-            if (brickcounter == 6)
-            {
-                brick5.Visibility = Visibility.Collapsed;
-            }
-            if (brickcounter == 7)
-            {
-                brick4.Visibility = Visibility.Collapsed;
-            }
-            if (brickcounter == 8)
-            {
-                brick3.Visibility = Visibility.Collapsed;
-            }
-            if (brickcounter == 9)
-            {
-                brick2.Visibility = Visibility.Collapsed;
-            }
-            if (brickcounter == 10)
-            {
-                brick1.Visibility = Visibility.Collapsed;
-                brickcounter = 0;
-            }
-            brickcounter++;
-            */
         }
         
 
@@ -110,108 +61,62 @@ namespace P0V1
 
                 Debug.WriteLine(backgroundCounter);
                 Background1.Source = new BitmapImage(new Uri(backgroundList[backgroundCounter], UriKind.Relative));
-                if (backgroundCounter >= 0)
+
+                //Hide all interactables
+                Paper.Visibility = Visibility.Collapsed;
+                Golfball.Visibility = Visibility.Collapsed;
+                travellers.Visibility = Visibility.Collapsed;
+            
+                Brick1.Visibility = Visibility.Collapsed;
+                Brick2.Visibility = Visibility.Collapsed;
+                Brick3.Visibility = Visibility.Collapsed;
+                Brick4.Visibility = Visibility.Collapsed;
+                Brick5.Visibility = Visibility.Collapsed;
+                Brick6.Visibility = Visibility.Collapsed;
+                Brick7.Visibility = Visibility.Collapsed;
+
+                IRS.Visibility = Visibility.Collapsed;
+                twitter.Visibility = Visibility.Collapsed;
+                plane.Visibility = Visibility.Collapsed;
+                respectwomen.Visibility = Visibility.Collapsed;
+
+                //Show interactables for current scene
+                switch (backgroundList[backgroundCounter])
                 {
-                    Golfball.Visibility = Visibility.Collapsed;
-                    Paper.Visibility = Visibility.Collapsed;
-                    IRS.Visibility = Visibility.Collapsed;
-                    twitter.Visibility = Visibility.Collapsed;
-                    travellers.Visibility = Visibility.Collapsed;
-
-                    Brick1.Visibility = Visibility.Collapsed;
-                    Brick2.Visibility = Visibility.Collapsed;
-                    Brick3.Visibility = Visibility.Collapsed;
-                    Brick4.Visibility = Visibility.Collapsed;
-                    Brick5.Visibility = Visibility.Collapsed;
-                    Brick6.Visibility = Visibility.Collapsed;
-                    Brick7.Visibility = Visibility.Collapsed;
-
-
-                    Paper.Visibility = Visibility.Collapsed;
+                    case "Bedroom1.jpg":
+                        Paper.Visibility = Visibility.Visible;
+                        break;
+                    case "Golf1.jpg":
+                        Golfball.Visibility = Visibility.Visible;
+                        break;
+                    case "Hotel3.jpg":
+                        travellers.Visibility = Visibility.Visible;
+                        break;
+                    case "Desert1.jpg":
+                        Brick1.Visibility = Visibility.Visible;
+                        Brick2.Visibility = Visibility.Visible;
+                        Brick3.Visibility = Visibility.Visible;
+                        Brick4.Visibility = Visibility.Visible;
+                        Brick5.Visibility = Visibility.Visible;
+                        Brick6.Visibility = Visibility.Visible;
+                        Brick7.Visibility = Visibility.Visible;
+                        break;
+                    case "Podium1.png":
+                        IRS.Visibility = Visibility.Visible;
+                        twitter.Visibility = Visibility.Visible;
+                        break;
+                    case "Estate1.jpg":
+                        plane.Visibility = Visibility.Visible;
+                        break;
+                    case "Estate3.jpg":
+                        break;
+                    case "miss_universe1.jpg":
+                        respectwomen.Visibility = Visibility.Visible;
+                        break;
                 }
 
-                if (backgroundCounter == 0)
-                {
-                    Paper.Visibility = Visibility.Visible;
-                }
-                if (backgroundCounter == 1)
-                {
 
-                    Golfball.Visibility = Visibility.Visible;
-                   
-                    
-
-                }
-
-                if (backgroundCounter == 2)
-                {
-                    closedsign.Visibility = Visibility.Visible;
-                    constructionButton.Visibility = Visibility.Visible;
-                    
-                    closedsign.Visibility = Visibility.Collapsed;
-
-                    travellers.Visibility = Visibility.Visible;
-
-                }
-
-
-
-                if (backgroundCounter == 3)
-                {
-                    Brick1.Visibility = Visibility.Visible;
-                    Brick2.Visibility = Visibility.Visible;
-                    Brick3.Visibility = Visibility.Visible;
-                    Brick4.Visibility = Visibility.Visible;
-                    Brick5.Visibility = Visibility.Visible;
-                    Brick6.Visibility = Visibility.Visible;
-                    Brick7.Visibility = Visibility.Visible;
-                }            
-    
-
-                if (backgroundCounter == 4)
-                {
-                    IRS.Visibility = Visibility.Visible;
-                    twitter.Visibility = Visibility.Visible;
-                }
-
-                if(backgroundCounter == 6)
-                {
-                    plane.Visibility = Visibility.Visible;
-                }
-
-                if (backgroundCounter == 8)
-                {
-                    respectwomen.Visibility = Visibility.Visible;
-                }
-
-                else
-                {
-                    //these two can stay visible
-                   
-                   
-                    constructionButton.Visibility = Visibility.Collapsed;
-                 //   twitter.Visibility = Visibility.Collapsed;
-                 //   IRS.Visibility = Visibility.Collapsed;
-                    plane.Visibility = Visibility.Collapsed;
-                   
-                    /*
-                    Brick1.Visibility = Visibility.Collapsed;
-                    Brick2.Visibility = Visibility.Collapsed;
-                    Brick3.Visibility = Visibility.Collapsed;
-                    Brick4.Visibility = Visibility.Collapsed;
-                    Brick5.Visibility = Visibility.Collapsed;
-                    Brick6.Visibility = Visibility.Collapsed;
-                   */
-
-               
-
-                }
-
-                backgroundCounter++;
-                if (backgroundCounter >= backgroundList.Length)
-                {
-                    backgroundCounter = 0;
-                }
+                backgroundCounter = (backgroundCounter + 1) % backgroundList.Length;        //Increment counter and loop if at last entry
             }
 
         }
