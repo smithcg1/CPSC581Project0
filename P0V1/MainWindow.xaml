@@ -93,24 +93,24 @@
         </Storyboard>
         <Storyboard x:Key="sbtwitter">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="twitter">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-3.579"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="90.38"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="226.397"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="340.937"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="518.117"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="255.38"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="600"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="934.937"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1247.117"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="twitter">
-                <EasingDoubleKeyFrame KeyTime="0" Value="21.923"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="46.979"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="55.927"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="28.187"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-47.875"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="135"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="170"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="135"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-80.875"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="twitter">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1.019"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="twitter">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0.984"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="twitter">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -120,52 +120,73 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbBricks">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick6">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-88.044"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:23" Value="3.289"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Brick6">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.001"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:23" Value="4.668"/>
-            </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick1">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-168.667"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:22" Value="6"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Brick1">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.334"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:22" Value="4.667"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-975"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-975"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick5">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-254.667"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:21" Value="18"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Brick5">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="4.001"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:21" Value="5.334"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-780"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="-780"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick4">
-                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-347.333"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="13.334"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Brick4">
-                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="2.667"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="5.334"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-585"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="-585"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick3">
-                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-418.667"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="13.333"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Brick3">
-                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="2.667"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:19" Value="4.667"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-390"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="-390"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick2">
-                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="2.667"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-195"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="-195"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Brick2">
-                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="6"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Brick6">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Brick5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Brick4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Brick3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Brick2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Brick1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick7">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-1170"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="-1170"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="Brick7">
+                <EasingThicknessKeyFrame KeyTime="0" Value="373,220,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:6" Value="373,220,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbPlane">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="plane">
@@ -218,10 +239,18 @@
         </Storyboard>
         <Storyboard x:Key="sbtravellers">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="travellers">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="280.5"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="700"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="travellers">
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="22"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="travellers">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="travellers">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
 
@@ -266,7 +295,7 @@
             <ColumnDefinition Width="95*"/>
             <ColumnDefinition Width="78*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="Background1" HorizontalAlignment="Left" Height="769.333" VerticalAlignment="Top" Width="1272.333" Source="Golf1.jpg" Stretch="Fill" Grid.ColumnSpan="2" Margin="0,0,-0.333,-0.333" Grid.RowSpan="2">
+        <Image x:Name="Background1" HorizontalAlignment="Left" Height="769.333" VerticalAlignment="Top" Width="1272.333" Source="Bedroom1.jpg" Stretch="Fill" Grid.ColumnSpan="2" Margin="0,0,0,-0.333" Grid.RowSpan="2">
             <Image.Effect>
                 <DropShadowEffect/>
             </Image.Effect>
@@ -285,7 +314,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button x:Name="Button1" Background="Transparent" Click="Button1_Click" Margin="126.431,157,310.512,8.461" Grid.Column="1" RenderTransformOrigin="0.5,0.5" >
+        <Button x:Name="Button1" Background="Transparent" Click="Button1_Click" Margin="303.752,0,119.751,156" Grid.Column="1" RenderTransformOrigin="0.5,0.5" Height="150" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" >
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -297,7 +326,7 @@
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
-            <Image Source="TRUMP-MAGASIGWHT-2.png" Stretch="Fill" Height="136" Width="136" RenderTransformOrigin="0.5,0.5">
+            <Image Source="TRUMP-MAGASIGWHT-2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -359,13 +388,8 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="brick1" Visibility="Collapsed" Margin="-5,197,146.667,-0.333" Source="brick.jpg" Stretch="Fill" Grid.RowSpan="2"/>
-        <Image x:Name="brick2" Visibility="Collapsed" Margin="88,197,64.667,-0.333" Source="brick.jpg" Stretch="Fill" Grid.RowSpan="2"/>
-        <Image x:Name="brick3" Visibility="Collapsed" Margin="188,197,206.667,1.667" Source="brick.jpg" Stretch="Fill" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Image x:Name="brick4" Visibility="Collapsed"  Grid.Column="1" Margin="1.333,197,88.667,1.667" Source="brick.jpg" Stretch="Fill" Grid.RowSpan="2"/>
-        <Image x:Name="brick5" Visibility="Collapsed" Margin="99.333,197,-0.333,1.667" Source="brick.jpg" Stretch="Fill" Grid.Column="1" Grid.RowSpan="2"/>
         <Image x:Name="IRS" HorizontalAlignment="Left" Height="167" Margin="113,50,0,0" VerticalAlignment="Top" Width="95" Source="IRS.png" Visibility="Collapsed"/>
-        <Image x:Name="twitter" HorizontalAlignment="Left" Height="56" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Source="twitterbird.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        <Image x:Name="twitter" HorizontalAlignment="Left" Height="100" Margin="30,30,0,0" VerticalAlignment="Top" Width="100" Source="twitterbird.png" RenderTransformOrigin="0.5,0.5" Visibility="Visible">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -398,7 +422,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Name="Brick2" HorizontalAlignment="Left" Height="97" Margin="137.098,222,0,0" VerticalAlignment="Top" Width="107" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.RowSpan="2">
+        <Image x:Name="Brick7" HorizontalAlignment="Left" Height="200" Margin="371.5,220,0,0" VerticalAlignment="Top" Width="200" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -408,7 +432,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Name="Brick3" HorizontalAlignment="Left" Height="97" Margin="126.431,223.667,0,0" VerticalAlignment="Top" Width="107" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.RowSpan="2">
+        <Image x:Name="Brick6" HorizontalAlignment="Left" Height="200" Margin="373,220,0,0" VerticalAlignment="Top" Width="200" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -418,7 +442,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Name="Brick4" HorizontalAlignment="Left" Height="97" Margin="126.098,223.667,0,0" VerticalAlignment="Top" Width="107" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.RowSpan="2">
+        <Image x:Name="Brick5" HorizontalAlignment="Left" Height="200" Margin="373,220,0,0" VerticalAlignment="Top" Width="200" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -428,7 +452,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Name="Brick5" HorizontalAlignment="Left" Height="97" Margin="126.431,222.333,0,0" VerticalAlignment="Top" Width="107" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.RowSpan="2">
+        <Image x:Name="Brick4" HorizontalAlignment="Left" Height="200" Margin="373,220,0,0" VerticalAlignment="Top" Width="200" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -438,7 +462,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Name="Brick6" HorizontalAlignment="Left" Height="97" Margin="137.098,223.667,0,0" VerticalAlignment="Top" Width="107" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.RowSpan="2">
+        <Image x:Name="Brick3" HorizontalAlignment="Left" Height="200" Margin="373,220,0,0" VerticalAlignment="Top" Width="200" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -448,10 +472,17 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="Brick1" HorizontalAlignment="Left" Height="97" Margin="137.098,223.667,0,0" VerticalAlignment="Top" Width="96" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Visibility="Collapsed" Grid.RowSpan="2">
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
+        <Image x:Name="Brick2" HorizontalAlignment="Left" Height="200" Margin="373,220,0,0" VerticalAlignment="Top" Width="200" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1"  Visibility="Collapsed" Grid.Row="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Brick1" HorizontalAlignment="Left" Height="200" Margin="373,220,0,0" VerticalAlignment="Top" Width="200" Source="brick.jpg" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Visibility="Collapsed" Grid.Row="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -472,7 +503,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image  x:Name="travellers" Grid.ColumnSpan="2" Visibility="Collapsed" Margin="159,38,129.667,52.667" Source="TripAdvisor-Travelerschoice-2018_en.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+        <Image  x:Name="travellers" Grid.ColumnSpan="2" Visibility="Collapsed" Margin="513,63,384.248,422.985" Source="TripAdvisor-Travelerschoice-2018_en.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
