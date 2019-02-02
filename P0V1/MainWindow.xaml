@@ -176,6 +176,33 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-114"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbPaper">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Paper">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-725.374"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Paper">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.125"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Paper">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.11"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-0.086"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Paper">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-10.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-90.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Paper">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-8.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-77.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Button1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-92.667"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Button1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="9.333"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
 
     </Window.Resources>
     <Window.Triggers>
@@ -190,6 +217,9 @@
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="plane">
             <BeginStoryboard Storyboard="{StaticResource sbPlane}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="Paper">
+            <BeginStoryboard x:Name="sbPaper_BeginStoryboard" Storyboard="{StaticResource sbPaper}"/>
         </EventTrigger>
     </Window.Triggers>
     <Grid>
@@ -216,7 +246,15 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button x:Name="Button1" Background="Transparent" Click="Button1_Click" Margin="99.333,128.667,30.334,95.333" Grid.Column="1" >
+        <Button x:Name="Button1" Background="Transparent" Click="Button1_Click" Margin="99.333,128.667,30.334,95.333" Grid.Column="1" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -385,5 +423,15 @@
             </Image.RenderTransform>
         </Image>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="137.098,38.333,-0.333,0" VerticalAlignment="Top" Width="96.333"/>
+        <Image x:Name="Paper" HorizontalAlignment="Left" Height="157.333" Margin="159.334,100.334,0,0" VerticalAlignment="Top" Width="165.331" Source="Paper1.jpg" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" Visibility="Visible">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>

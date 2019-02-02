@@ -124,8 +124,15 @@ namespace P0V1
                     Brick6.Visibility = Visibility.Collapsed;
 
 
+                    Paper.Visibility = Visibility.Collapsed;
 
 
+
+                }
+
+                if (backgroundCounter == 0)
+                {
+                    Paper.Visibility = Visibility.Visible;
                 }
                 if (backgroundCounter == 1)
                 {
