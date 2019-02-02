@@ -125,9 +125,6 @@ namespace P0V1
 
 
                     Paper.Visibility = Visibility.Collapsed;
-
-
-
                 }
 
                 if (backgroundCounter == 0)
