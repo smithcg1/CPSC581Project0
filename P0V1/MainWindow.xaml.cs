@@ -34,7 +34,7 @@ namespace P0V1
             InitializeComponent();
             sbTrumpHair = new string[]{"sbTrumpHair1", "sbTrumpHair2", "sbTrumpHair3", "sbTrumpHair4" };
 
-            backgroundList = new string[] {"Bedroom1.jpg", "Golf1.jpg", "Hotel3.jpg", "Desert1.jpg", "Podium1.png", "Wall2.jpg", "Estate1.jpg", "Estate3.jpg", "miss_universe1.jpg"};
+            backgroundList = new string[] {"Bedroom1.jpg", "Golf1.jpg", "Hotel3.jpg", "Desert1.jpg", "Podium1.png", "Estate1.jpg", "Estate3.jpg", "miss_universe1.jpg"};
         }
 
         private void irs_botton_clicked(object sender, RoutedEventArgs e)
@@ -113,8 +113,10 @@ namespace P0V1
                 if (backgroundCounter >= 0)
                 {
                     Golfball.Visibility = Visibility.Collapsed;
+                    Paper.Visibility = Visibility.Collapsed;
                     IRS.Visibility = Visibility.Collapsed;
                     twitter.Visibility = Visibility.Collapsed;
+                    travellers.Visibility = Visibility.Collapsed;
 
                     Brick1.Visibility = Visibility.Collapsed;
                     Brick2.Visibility = Visibility.Collapsed;
@@ -122,12 +124,10 @@ namespace P0V1
                     Brick4.Visibility = Visibility.Collapsed;
                     Brick5.Visibility = Visibility.Collapsed;
                     Brick6.Visibility = Visibility.Collapsed;
+                    Brick7.Visibility = Visibility.Collapsed;
 
 
                     Paper.Visibility = Visibility.Collapsed;
-
-
-
                 }
 
                 if (backgroundCounter == 0)
@@ -164,6 +164,7 @@ namespace P0V1
                     Brick4.Visibility = Visibility.Visible;
                     Brick5.Visibility = Visibility.Visible;
                     Brick6.Visibility = Visibility.Visible;
+                    Brick7.Visibility = Visibility.Visible;
                 }            
     
 
