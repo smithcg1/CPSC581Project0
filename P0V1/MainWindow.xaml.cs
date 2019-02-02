@@ -136,7 +136,6 @@ namespace P0V1
                 }
                 if (backgroundCounter == 1)
                 {
-                    Debug.WriteLine("IRS SIGN SHOULD BE VISIBLE");
 
                     Golfball.Visibility = Visibility.Visible;
                    
@@ -150,8 +149,8 @@ namespace P0V1
                     constructionButton.Visibility = Visibility.Visible;
                     
                     closedsign.Visibility = Visibility.Collapsed;
-                   
-                  
+
+                    travellers.Visibility = Visibility.Visible;
 
                 }
 
@@ -178,6 +177,12 @@ namespace P0V1
                 {
                     plane.Visibility = Visibility.Visible;
                 }
+
+                if (backgroundCounter == 8)
+                {
+                    respectwomen.Visibility = Visibility.Visible;
+                }
+
                 else
                 {
                     //these two can stay visible

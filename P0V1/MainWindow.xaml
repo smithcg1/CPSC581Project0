@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
+
+
+        <Storyboard x:Key="sbrespectwomen">
+            <DoubleAnimation
+        Storyboard.TargetName="respectwomen" 
+        Storyboard.TargetProperty="Opacity"
+        From="1" To="0" Duration="0:0:5" 
+        AutoReverse="True" RepeatBehavior="Forever" />
+        </Storyboard>
+
+
+
+
         <Storyboard x:Key="sbTrumpHair1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Hair">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -203,6 +216,18 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="9.333"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbtravellers">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="travellers">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="280.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="travellers">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+
+
+
 
     </Window.Resources>
     <Window.Triggers>
@@ -221,6 +246,16 @@
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="Paper">
             <BeginStoryboard x:Name="sbPaper_BeginStoryboard" Storyboard="{StaticResource sbPaper}"/>
         </EventTrigger>
+
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="travellers">
+            <BeginStoryboard x:Name="sbtravellers_BeginStoryboard1" Storyboard="{StaticResource sbtravellers}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="respectwomen">
+            <BeginStoryboard x:Name="sbrespectwomen_BeginStoryboard1" Storyboard="{StaticResource sbrespectwomen}"/>
+        </EventTrigger>
+        
+
+
     </Window.Triggers>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -433,5 +468,16 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Image  x:Name="travellers" Grid.ColumnSpan="2" Visibility="Collapsed" Margin="159,38,129.667,52.667" Source="TripAdvisor-Travelerschoice-2018_en.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="respectwomen" Visibility="Collapsed" Content="I have great respect for women.&#xD;&#xA; Nobody has more respect for &#xD;&#xA;women that I do.  " HorizontalAlignment="Left"  Margin="27,157,-75.333,0" VerticalAlignment="Top" FontSize="22" Grid.ColumnSpan="2" Height="111" Width="567" Foreground="White" FontWeight="Bold"/>
     </Grid>
 </Window>
