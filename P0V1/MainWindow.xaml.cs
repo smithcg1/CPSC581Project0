@@ -34,7 +34,7 @@ namespace P0V1
             InitializeComponent();
             sbTrumpHair = new string[]{"sbTrumpHair1", "sbTrumpHair2", "sbTrumpHair3", "sbTrumpHair4" };
 
-            backgroundList = new string[] {"Bedroom1.jpg", "Golf1.jpg", "Hotel3.jpg", "Desert1.jpg", "Podium1.png", "Estate1.jpg", "Estate3.jpg", "miss_universe1.jpg"};
+            backgroundList = new string[] {"Bedroom1.jpg", "Golf1.jpg", "Hotel3.jpg", "Desert1.jpg", "Podium1.png", "Wall2.jpg", "Estate1.jpg", "Estate3.jpg", "miss_universe1.jpg"};
         }
 
         private void irs_botton_clicked(object sender, RoutedEventArgs e)
@@ -45,9 +45,10 @@ namespace P0V1
 
         }
 
-
+        
         private void constructionButton_clicked(object sender, RoutedEventArgs e)
         {
+            /*
             if(brickcounter == 1) {
                 brick1.Visibility = Visibility.Visible;
             }
@@ -89,8 +90,9 @@ namespace P0V1
                 brickcounter = 0;
             }
             brickcounter++;
-
+            */
         }
+        
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
@@ -114,6 +116,7 @@ namespace P0V1
                     speachbubble1.Visibility = Visibility.Collapsed;
 
 
+
                 }
                 if (backgroundCounter == 1)
                 {
@@ -121,6 +124,7 @@ namespace P0V1
 
                     Golfball.Visibility = Visibility.Visible;
                     speachbubble3.Visibility = Visibility.Visible;
+                    
 
                 }
 
@@ -132,24 +136,52 @@ namespace P0V1
                     closedsign.Visibility = Visibility.Collapsed;
                     speachbubble1.Visibility = Visibility.Visible;
 
+                  
+
                 }
 
-                if(backgroundCounter == 4)
+
+
+                if (backgroundCounter == 3)
+                {
+                    Brick1.Visibility = Visibility.Visible;
+                    Brick2.Visibility = Visibility.Visible;
+                    Brick3.Visibility = Visibility.Visible;
+                    Brick4.Visibility = Visibility.Visible;
+                    Brick5.Visibility = Visibility.Visible;
+                    Brick6.Visibility = Visibility.Visible;
+                }            
+    
+
+                if (backgroundCounter == 4)
                 {
                     IRS.Visibility = Visibility.Visible;
                     twitter.Visibility = Visibility.Visible;
                 }
 
+                if(backgroundCounter == 6)
+                {
+                    plane.Visibility = Visibility.Visible;
+                }
                 else
                 {
                     //these two can stay visible
                    
                     speachbubble1.Visibility = Visibility.Visible;
                     constructionButton.Visibility = Visibility.Collapsed;
-  
+                    twitter.Visibility = Visibility.Collapsed;
+                    IRS.Visibility = Visibility.Collapsed;
+                   plane.Visibility = Visibility.Collapsed;
+                   
+                    Brick1.Visibility = Visibility.Collapsed;
+                    Brick2.Visibility = Visibility.Collapsed;
+                    Brick3.Visibility = Visibility.Collapsed;
+                    Brick4.Visibility = Visibility.Collapsed;
+                    Brick5.Visibility = Visibility.Collapsed;
+                    Brick6.Visibility = Visibility.Collapsed;
+                   
 
-
-
+               
 
                 }
 

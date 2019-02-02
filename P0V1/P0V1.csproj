@@ -176,5 +176,17 @@
   <ItemGroup>
     <Resource Include="twitterbird.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TripAdvisor-Travelerschoice-2018_en.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TRUMP-MAGASIGWHT-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Paper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Plane2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
