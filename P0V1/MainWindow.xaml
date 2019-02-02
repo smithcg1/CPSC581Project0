@@ -216,17 +216,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="Hair" HorizontalAlignment="Left" Height="79" Margin="-101,197,0,0" VerticalAlignment="Top" Width="96" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Button x:Name="Button1" Background="Transparent" Click="Button1_Click" Margin="99.333,144,30.334,80" Grid.Column="1" >
+        <Button x:Name="Button1" Background="Transparent" Click="Button1_Click" Margin="99.333,128.667,30.334,95.333" Grid.Column="1" >
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -297,8 +287,31 @@
         <Image x:Name="brick3" Visibility="Collapsed" Margin="188,197,206.667,1.667" Source="brick.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
         <Image x:Name="brick4" Visibility="Collapsed"  Grid.Column="1" Margin="1.333,197,88.667,1.667" Source="brick.jpg" Stretch="Fill"/>
         <Image x:Name="brick5" Visibility="Collapsed" Margin="99.333,197,-0.333,1.667" Source="brick.jpg" Stretch="Fill" Grid.Column="1"/>
-        <Image x:Name="IRS" HorizontalAlignment="Left" Height="167" Margin="113,50,0,0" VerticalAlignment="Top" Width="95" Source="IRS.png" Visibility="Visible"/>
+        <Image x:Name="IRS" HorizontalAlignment="Left" Height="167" Margin="113,50,0,0" VerticalAlignment="Top" Width="95" Source="IRS.png" Visibility="Collapsed"/>
         <Image x:Name="twitter" HorizontalAlignment="Left" Height="56" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Source="twitterbird.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="plane" HorizontalAlignment="Left" Height="89" Margin="40.763,35.666,-77.666,0" VerticalAlignment="Top" Width="270.001" Source="Plane2.png" Grid.Column="1" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Hair" HorizontalAlignment="Left" Height="79" Margin="-101,197,0,0" VerticalAlignment="Top" Width="96" Source="trump_just_hair.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -372,18 +385,5 @@
             </Image.RenderTransform>
         </Image>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="137.098,38.333,-0.333,0" VerticalAlignment="Top" Width="96.333"/>
-        <Image x:Name="plane" HorizontalAlignment="Left" Height="89" Margin="40.763,35.666,-77.666,0" VerticalAlignment="Top" Width="270.001" Source="Plane2.png" Grid.Column="1" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
     </Grid>
 </Window>

@@ -113,7 +113,16 @@ namespace P0V1
                 if (backgroundCounter >= 0)
                 {
                     Golfball.Visibility = Visibility.Collapsed;
-                    speachbubble1.Visibility = Visibility.Collapsed;
+                    IRS.Visibility = Visibility.Collapsed;
+                    twitter.Visibility = Visibility.Collapsed;
+
+                    Brick1.Visibility = Visibility.Collapsed;
+                    Brick2.Visibility = Visibility.Collapsed;
+                    Brick3.Visibility = Visibility.Collapsed;
+                    Brick4.Visibility = Visibility.Collapsed;
+                    Brick5.Visibility = Visibility.Collapsed;
+                    Brick6.Visibility = Visibility.Collapsed;
+
 
 
 
@@ -123,7 +132,7 @@ namespace P0V1
                     Debug.WriteLine("IRS SIGN SHOULD BE VISIBLE");
 
                     Golfball.Visibility = Visibility.Visible;
-                    speachbubble3.Visibility = Visibility.Visible;
+                   
                     
 
                 }
@@ -134,8 +143,7 @@ namespace P0V1
                     constructionButton.Visibility = Visibility.Visible;
                     
                     closedsign.Visibility = Visibility.Collapsed;
-                    speachbubble1.Visibility = Visibility.Visible;
-
+                   
                   
 
                 }
@@ -167,19 +175,20 @@ namespace P0V1
                 {
                     //these two can stay visible
                    
-                    speachbubble1.Visibility = Visibility.Visible;
-                    constructionButton.Visibility = Visibility.Collapsed;
-                    twitter.Visibility = Visibility.Collapsed;
-                    IRS.Visibility = Visibility.Collapsed;
-                   plane.Visibility = Visibility.Collapsed;
                    
+                    constructionButton.Visibility = Visibility.Collapsed;
+                 //   twitter.Visibility = Visibility.Collapsed;
+                 //   IRS.Visibility = Visibility.Collapsed;
+                    plane.Visibility = Visibility.Collapsed;
+                   
+                    /*
                     Brick1.Visibility = Visibility.Collapsed;
                     Brick2.Visibility = Visibility.Collapsed;
                     Brick3.Visibility = Visibility.Collapsed;
                     Brick4.Visibility = Visibility.Collapsed;
                     Brick5.Visibility = Visibility.Collapsed;
                     Brick6.Visibility = Visibility.Collapsed;
-                   
+                   */
 
                
 
