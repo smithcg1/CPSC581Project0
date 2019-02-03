@@ -79,6 +79,8 @@ namespace P0V1
                 twitter.Visibility = Visibility.Collapsed;
                 plane.Visibility = Visibility.Collapsed;
                 respectwomen.Visibility = Visibility.Collapsed;
+                wineglass.Visibility = Visibility.Collapsed;
+
 
                 //Show interactables for current scene
                 switch (backgroundList[backgroundCounter])
@@ -107,8 +109,10 @@ namespace P0V1
                         break;
                     case "Estate1.jpg":
                         plane.Visibility = Visibility.Visible;
+
                         break;
                     case "Estate3.jpg":
+                        wineglass.Visibility = Visibility.Visible;
                         break;
                     case "miss_universe1.jpg":
                         respectwomen.Visibility = Visibility.Visible;
