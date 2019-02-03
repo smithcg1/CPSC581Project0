@@ -16,6 +16,8 @@
         From="1" To="0" Duration="0:0:5" 
         AutoReverse="True" RepeatBehavior="Forever" />
         </Storyboard>
+        
+        
 
 
 
@@ -210,6 +212,14 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-114"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+
+        <Storyboard x:Key="sbwineglass">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="wineglass">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-120.086" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+
         <Storyboard x:Key="sbPaper">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Paper">
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-725.374"/>
@@ -257,9 +267,10 @@
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="twitter">
             <BeginStoryboard x:Name="sbtwitter_BeginStoryboard" Storyboard="{StaticResource sbtwitter}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseRightButtonUp" SourceName="Button1">
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="Golfball">
             <BeginStoryboard x:Name="sbGolfball1_BeginStoryboard" Storyboard="{StaticResource sbGolfball1}"/>
         </EventTrigger>
+
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="Brick1">
             <BeginStoryboard x:Name="sbBricks_BeginStoryboard1" Storyboard="{StaticResource sbBricks}"/>
         </EventTrigger>
@@ -276,8 +287,10 @@
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="respectwomen">
             <BeginStoryboard x:Name="sbrespectwomen_BeginStoryboard1" Storyboard="{StaticResource sbrespectwomen}"/>
         </EventTrigger>
-
-
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="wineglass">
+            <BeginStoryboard x:Name="sbwineglass_BeginStoryboard1" Storyboard="{StaticResource sbwineglass}"/>
+        </EventTrigger>
+        
 
     </Window.Triggers>
     <Grid>
@@ -494,5 +507,17 @@
             </Image.RenderTransform>
         </Image>
         <Label x:Name="respectwomen" Visibility="Collapsed" Content="I have great respect for women.&#xD;&#xA; Nobody has more respect for &#xD;&#xA;women that I do.  " HorizontalAlignment="Left"  Margin="27,157,0,0" VerticalAlignment="Top" FontSize="22" Height="111" Width="567" Foreground="White" FontWeight="Bold"/>
+       
+        <Image x:Name="wineglass" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="680,217,275.333,294.667" Grid.RowSpan="2" Source="Wine1.png" Stretch="Fill">
+        <Image.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Image.RenderTransform>
+        </Image>
+
     </Grid>
 </Window>
