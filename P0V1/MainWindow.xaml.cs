@@ -43,6 +43,7 @@ namespace P0V1
             sb1.Begin();
             Debug.WriteLine("IRS VISIBLE");
         }
+
         
 
         private void Button1_Click(object sender, RoutedEventArgs e)
@@ -63,8 +64,8 @@ namespace P0V1
                 Background1.Source = new BitmapImage(new Uri(backgroundList[backgroundCounter], UriKind.Relative));
 
                 //Hide all interactables
-                Paper.Visibility = Visibility.Collapsed;
-                Golfball.Visibility = Visibility.Collapsed;
+                 Paper.Visibility = Visibility.Collapsed;
+                 Golfball.Visibility = Visibility.Collapsed;
                 travellers.Visibility = Visibility.Collapsed;
             
                 Brick1.Visibility = Visibility.Collapsed;
@@ -79,8 +80,8 @@ namespace P0V1
                 twitter.Visibility = Visibility.Collapsed;
                 plane.Visibility = Visibility.Collapsed;
                 respectwomen.Visibility = Visibility.Collapsed;
-                wineglass.Visibility = Visibility.Collapsed;
-
+                Fired.Visibility = Visibility.Collapsed;
+                meatLoaf.Visibility = Visibility.Collapsed;
 
                 //Show interactables for current scene
                 switch (backgroundList[backgroundCounter])
@@ -109,15 +110,16 @@ namespace P0V1
                         break;
                     case "Estate1.jpg":
                         plane.Visibility = Visibility.Visible;
-
                         break;
                     case "Estate3.jpg":
-                        wineglass.Visibility = Visibility.Visible;
+                        meatLoaf.Visibility = Visibility.Visible;
+                        Fired.Visibility = Visibility.Visible;
                         break;
                     case "miss_universe1.jpg":
                         respectwomen.Visibility = Visibility.Visible;
                         break;
                 }
+
 
 
                 backgroundCounter = (backgroundCounter + 1) % backgroundList.Length;        //Increment counter and loop if at last entry

@@ -14,10 +14,8 @@
         Storyboard.TargetName="respectwomen" 
         Storyboard.TargetProperty="Opacity"
         From="1" To="0" Duration="0:0:5" 
-        AutoReverse="True" RepeatBehavior="Forever" />
+        />
         </Storyboard>
-        
-        
 
 
 
@@ -95,18 +93,18 @@
         </Storyboard>
         <Storyboard x:Key="sbtwitter">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="twitter">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="255.38"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="600"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="934.937"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1247.117"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="523"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="688"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1041.286"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1369.286"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="twitter">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="135"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="170"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="135"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-80.875"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="105"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="245"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="268"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="78.073"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-68.927"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="twitter">
                 <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
@@ -115,11 +113,13 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="twitter">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="17.185"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="17.185"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="8.276"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.168"/>
             </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="twitter">
+                <EasingPointKeyFrame KeyTime="0" Value="0.5,0.5"/>
+                <EasingPointKeyFrame KeyTime="0:0:2" Value="0.5,0.5"/>
+                <EasingPointKeyFrame KeyTime="0:0:3" Value="0.53,0.398"/>
+            </PointAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="sbBricks">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Brick1">
@@ -212,14 +212,6 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-114"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-
-        <Storyboard x:Key="sbwineglass">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="wineglass">
-                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-120.086" />
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-
-
         <Storyboard x:Key="sbPaper">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Paper">
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-725.374"/>
@@ -240,6 +232,7 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-77.333"/>
             </DoubleAnimationUsingKeyFrames>
+
         </Storyboard>
         <Storyboard x:Key="sbtravellers">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="travellers">
@@ -257,6 +250,23 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sbFired">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Fired">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-929.64"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Fired">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="48.873"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Fired">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-716.986"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Fired">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.459"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Fired" >
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.209"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
 
 
 
@@ -270,7 +280,6 @@
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="Golfball">
             <BeginStoryboard x:Name="sbGolfball1_BeginStoryboard" Storyboard="{StaticResource sbGolfball1}"/>
         </EventTrigger>
-
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="Brick1">
             <BeginStoryboard x:Name="sbBricks_BeginStoryboard1" Storyboard="{StaticResource sbBricks}"/>
         </EventTrigger>
@@ -287,10 +296,11 @@
         <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="respectwomen">
             <BeginStoryboard x:Name="sbrespectwomen_BeginStoryboard1" Storyboard="{StaticResource sbrespectwomen}"/>
         </EventTrigger>
-        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="wineglass">
-            <BeginStoryboard x:Name="sbwineglass_BeginStoryboard1" Storyboard="{StaticResource sbwineglass}"/>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp" SourceName="meatLoaf">
+            <BeginStoryboard x:Name="sbFired_BeginStoryboard" Storyboard="{StaticResource sbFired}"/>
         </EventTrigger>
-        
+
+
 
     </Window.Triggers>
     <Grid>
@@ -381,8 +391,8 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="IRS" HorizontalAlignment="Left" Height="167" Margin="321,180,0,0" VerticalAlignment="Top" Width="95" Source="IRS.png" Visibility="Collapsed" Grid.RowSpan="2"/>
-        <Image x:Name="twitter" HorizontalAlignment="Left" Height="100" Margin="30,30,0,0" VerticalAlignment="Top" Width="100" Source="twitterbird.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        <Image x:Name="IRS" HorizontalAlignment="Left" Height="224" Margin="226,169,0,0" VerticalAlignment="Top" Width="293" Source="IRS.png" Visibility="Visible" Grid.RowSpan="2" RenderTransformOrigin="0.779,0.492"/>
+        <Image x:Name="twitter" HorizontalAlignment="Left" Height="138" Margin="12,57,0,0" VerticalAlignment="Top" Width="113" Source="twitterbird.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -507,17 +517,20 @@
             </Image.RenderTransform>
         </Image>
         <Label x:Name="respectwomen" Visibility="Collapsed" Content="I have great respect for women.&#xD;&#xA; Nobody has more respect for &#xD;&#xA;women that I do.  " HorizontalAlignment="Left"  Margin="27,157,0,0" VerticalAlignment="Top" FontSize="22" Height="111" Width="567" Foreground="White" FontWeight="Bold"/>
-       
-        <Image x:Name="wineglass" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="680,217,275.333,294.667" Grid.RowSpan="2" Source="Wine1.png" Stretch="Fill">
-        <Image.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform/>
-                <SkewTransform/>
-                <RotateTransform/>
-                <TranslateTransform/>
-            </TransformGroup>
-        </Image.RenderTransform>
+        <Image Name="meatLoaf" HorizontalAlignment="Left" Height="273" Margin="430.8,298.8,0,-108.6" Grid.Row="1" VerticalAlignment="Top" Width="128" Source="meatloaftb.png" Opacity="0.9" Grid.Column="1" Visibility="Collapsed">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
         </Image>
-
+        <Image x:Name="Fired" HorizontalAlignment="Left" Margin="605.624,119.085,-616.04,-177.441" Width="584.64" Source="fired.png" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-355.709"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>
