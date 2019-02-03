@@ -368,7 +368,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="IRS" HorizontalAlignment="Left" Height="167" Margin="113,50,0,0" VerticalAlignment="Top" Width="95" Source="IRS.png" Visibility="Collapsed"/>
+        <Image x:Name="IRS" HorizontalAlignment="Left" Height="167" Margin="321,180,0,0" VerticalAlignment="Top" Width="95" Source="IRS.png" Visibility="Collapsed" Grid.RowSpan="2"/>
         <Image x:Name="twitter" HorizontalAlignment="Left" Height="100" Margin="30,30,0,0" VerticalAlignment="Top" Width="100" Source="twitterbird.png" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
             <Image.RenderTransform>
                 <TransformGroup>
